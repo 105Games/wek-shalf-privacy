@@ -1,81 +1,95 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+from datetime import date
+today = date.today().isoformat()
+
+html = f"""<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>سياسة الخصوصية — Wek Shalf | 105Games</title>
+<title>Privacy Policy — Wek Shalf | 105Games</title>
 <style>
-  body { font-family: Arial, Tahoma, sans-serif; line-height: 1.8; margin: 0; padding: 0; }
-  header, footer { background:#111; color:#fff; padding:16px 20px; }
-  main { padding: 20px; max-width: 1000px; margin: auto; }
-  h1, h2, h3 { margin: 1.2em 0 0.4em; }
-  .note { background:#f5f5f5; padding:12px; border-radius:8px; }
-  .lang-switch { margin-top:20px; font-size:14px; }
-  a { color:#0066cc; }
-  hr { border: none; border-top:1px solid #ddd; margin:24px 0; }
-  .muted { color:#666; }
+  body {{ font-family: Arial, Helvetica, sans-serif; line-height: 1.75; margin:0; padding:0; color:#111; }}
+  header, footer {{ background:#111; color:#fff; padding:16px 20px; }}
+  main {{ padding: 22px; max-width: 960px; margin:auto; }}
+  h1,h2 {{ margin: 1.2em 0 0.4em; }}
+  .muted {{ color:#666; }}
+  a {{ color:#0a66c2; }}
+  ul {{ padding-left: 20px; }}
+  footer {{ text-align:center; }}
 </style>
 </head>
 <body>
 <header>
-  <h1>سياسة الخصوصية — <span dir="ltr">Wek Shalf</span></h1>
-  <div>الناشر: <strong>105Games</strong> — المطوّر: <strong>Mohammad Dawod</strong> — البريد: <a href="mailto:105gamesps@gmail.com" style="color:#fff;">105gamesps@gmail.com</a></div>
+  <h1>Privacy Policy — Wek Shalf</h1>
+  <div>Publisher: 105Games · Developer: Mohammad Dawod · Contact: <a href="mailto:105gamesps@gmail.com" style="color:#fff;">105gamesps@gmail.com</a></div>
 </header>
 <main>
-  <p class="muted">تاريخ النفاذ: 2025-10-16</p>
+  <p class="muted">Effective date: {today}</p>
 
-  <div class="note">
-    هذه السياسة تشرح كيف يتعامل تطبيق <strong dir="ltr">Wek Shalf</strong> مع البيانات. التطبيق موجّه لعامة المستخدمين ومناسب لعمر 7 سنوات فأكثر (7+). لا يجمع التطبيق بيانات شخصية معرِّفة بالهوية بشكل مباشر. قد تجمع خدمات الجهات الخارجية (مثل الإعلانات أو المشتريات داخل التطبيق) بيانات لأغراضها المشروعة وفق سياساتها.
-  </div>
+  <h2>Overview</h2>
+  <p>Wek Shalf is a casual mobile game intended for a general audience and suitable for ages 7+.
+     We do not directly collect personally identifiable information. Some third-party services we use
+     (listed below) may process device and app data under their own privacy policies to provide ads,
+     purchases, analytics, diagnostics, and performance monitoring.</p>
 
-  <h2>1) ما نجمعه نحن</h2>
-  <p>لا يطلب التطبيق إنشاء حساب ولا يجمع أسماء أو عناوين بريد أو أرقام هواتف. يتم استخدام بيانات محلية على الجهاز فقط لتفضيلات اللعب (مثل الصوت واللغة والتقدم) ولا تُغادر الجهاز إلا إذا اقتضت ميزة لاحقة يوافق عليها المستخدم.</p>
-
-  <h2>2) بيانات الجهاز وخدمات طرف ثالث</h2>
-  <p>نستخدم خدمات قد تجمع بيانات تشغيلية غير مباشرة مثل معرفات الإعلانات، نوع الجهاز، نظام التشغيل، عنوان IP التقريبي، وأداء الإعلانات. أمثلة:</p>
+  <h2>Data We Process</h2>
   <ul>
-    <li><strong>الإعلانات — AdMob (Google)</strong>: لعرض إعلانات مناسبة للعمر وغير مرتبطة بالإباحية أو القمار. قد تجمع Google بيانات لأغراض قياس الأداء ومكافحة الاحتيال. مزيد من المعلومات: <a href="https://policies.google.com/privacy">سياسة خصوصية Google</a> و<a href="https://support.google.com/admob/answer/6128543">سياسة AdMob</a>.</li>
-    <li><strong>المشتريات داخل التطبيق — Google Play Billing</strong>: تُعالج المدفوعات بواسطة Google، ولا نتلقى تفاصيل بطاقات الدفع. نحتفظ بسجلات غير شخصية لنجاح عملية الشراء داخل اللعبة فقط.</li>
+    <li><strong>Local game data</strong>: settings (e.g., sound, language) and progress, stored on the device.</li>
+    <li><strong>Network data</strong>: IP address, device/OS information, app version, advertising identifiers
+        (if available), used by third parties for delivery, analytics, and fraud prevention.</li>
   </ul>
 
-  <h2>3) المحتوى المناسب والأمان</h2>
+  <h2>Third-Party Services</h2>
   <ul>
-    <li>لا يحتوي التطبيق على محتوى إباحي أو قمار أو تشجيع على السلوكيات الخطرة.</li>
-    <li>الإعلانات مفلترة قدر الإمكان لتكون مناسبة للعمر.</li>
+    <li><strong>Advertising — Google AdMob</strong>: delivers age-appropriate ads. We do not allow adult or gambling content. 
+        AdMob may collect device identifiers and usage data for ad delivery, measurement, and fraud prevention.
+        More: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://support.google.com/admob/answer/6128543">AdMob Policy</a>.</li>
+    <li><strong>In-app Purchases — Google Play Billing</strong>: purchases are processed by Google.
+        We do not receive or store payment card details.</li>
+    <li><strong>Analytics — Firebase Analytics</strong>: event metrics to understand gameplay and improve features.
+        We use aggregated reports only.</li>
+    <li><strong>Diagnostics — Firebase Crashlytics</strong>: crash logs and stack traces to fix issues.
+        Logs may include device/OS info and anonymized identifiers.</li>
+    <li><strong>Performance Monitoring — Firebase Performance</strong>: network and rendering performance metrics
+        to improve stability.</li>
   </ul>
 
-  <h2>4) المعرف الإعلاني وملفات تعريف الارتباط</h2>
-  <p>قد تستخدم خدمات الإعلانات ملفات تعريف الارتباط أو معرف الإعلانات على الجهاز لأغراض القياس. يمكن للمستخدم تقييد الإعلانات المخصصة من إعدادات الجهاز/حساب Google.</p>
+  <h2>Children</h2>
+  <p>The game is suitable for ages 7+. If you are a parent or guardian and believe a child provided us with
+     personally identifiable information, contact us and we will remove it.</p>
 
-  <h2>5) الأطفال</h2>
-  <p>اللعبة مناسبة لعمر 7 سنوات فأكثر. إذا كنت ولي أمر وتعتقد أن طفلاً قد زوّدنا ببيانات شخصية يمكن التعرف عليها، تواصل معنا لإزالتها.</p>
+  <h2>Data Sharing and Sale</h2>
+  <p>We do not sell personal data. We share data only with the service providers above or when required by law.</p>
 
-  <h2>6) مشاركة البيانات</h2>
-  <p>لا نبيع بيانات المستخدمين. لا نشارك أي بيانات مع أطراف ثالثة باستثناء ما يلزم لتشغيل الخدمات المذكورة أعلاه أو الامتثال للقانون.</p>
+  <h2>Retention and Deletion</h2>
+  <p>Local data remains on your device while the app is installed. You can delete it by uninstalling the app
+     or using in-game reset options if available. Aggregated analytics and diagnostics are retained by providers
+     under their policies.</p>
 
-  <h2>7) الاحتفاظ والحذف</h2>
-  <p>يتم الاحتفاظ بالبيانات المحلية على الجهاز طالما كان التطبيق مثبتًا. يمكن حذفها بإلغاء تثبيت التطبيق أو استخدام خيار إعادة الضبط داخل اللعبة إن توفر.</p>
+  <h2>Your Choices</h2>
+  <ul>
+    <li>Limit personalized ads via your device/Google Account settings.</li>
+    <li>Disable analytics/diagnostics from your OS privacy settings where supported.</li>
+  </ul>
 
-  <h2>8) الأذونات</h2>
-  <p>يطلب التطبيق أذونات الشبكة للوصول إلى الإنترنت لعرض الإعلانات والتحقق من عمليات الشراء. لا يطلب أذونات حساسة مثل الكاميرا أو الموقع بدون ضرورة واضحة.</p>
+  <h2>Permissions</h2>
+  <p>The app requires Internet access for ads, purchases, and updates. It does not request sensitive permissions
+     such as camera or precise location unless a feature explicitly needs them.</p>
 
-  <h2>9) حقوقك</h2>
-  <p>يمكنك طلب معلومات عامة عن معالجة البيانات أو طلب تصحيح/حذف البيانات المحلية عند الاقتضاء عبر التواصل معنا.</p>
+  <h2>Changes</h2>
+  <p>We may update this policy. The effective date above reflects the latest version.</p>
 
-  <h2>10) التغييرات</h2>
-  <p>قد نُحدّث هذه السياسة. سيتم عرض تاريخ النفاذ أعلى الصفحة. استمرار الاستخدام يعني الموافقة على النسخة المحدّثة.</p>
-
-  <h2>11) التواصل</h2>
-  <p>الناشر: 105Games — المطوّر: Mohammad Dawod — البريد: <a href="mailto:105gamesps@gmail.com">105gamesps@gmail.com</a></p>
-
-  <hr>
-  <div class="lang-switch" dir="ltr">
-    <strong>English summary</strong><br>
-    This game is suitable for ages 7+. We do not collect personally identifiable information. Third‑party services (Google AdMob for ads, Google Play Billing for purchases) may process device data for fraud prevention and analytics under their own privacy policies. No adult or gambling content. Contact: 105gamesps@gmail.com. Effective date: 2025-10-16.
-  </div>
+  <h2>Contact</h2>
+  <p>105Games · Mohammad Dawod · <a href="mailto:105gamesps@gmail.com">105gamesps@gmail.com</a></p>
 </main>
 <footer>
-  © 2025 105Games — Wek Shalf
+  105Games
 </footer>
 </body>
-</html>
+</html>"""
+
+path = "/mnt/data/privacy_en.html"
+with open(path, "w", encoding="utf-8") as f:
+    f.write(html)
+
+path
